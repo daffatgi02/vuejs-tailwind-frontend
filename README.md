@@ -1,4 +1,4 @@
-<img alt="Night Coding" src="./assets/Hand%20Wave.gif" width='40' align="left"/><h2>Belajar Nodejs dengan CSS Tailwind</h2>
+<img alt="Night Coding" src="./assets/Hand%20Wave.gif" width='40' align="left"/><h2>Belajar Frontend VueJS dengan CSS Tailwind</h2>
 
 <!-- ## 👋 &nbsp;Belajar Nodejs dengan Tailwind CSS-->
 
