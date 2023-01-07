@@ -1,9 +1,19 @@
-# Belajar Backend menggunakan NODE JS dengan CSS tailwind
-[![NPM Version][npm-image]][npm-url]
-Built With
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-# Profil
-Nama : Daffa Fakhuddin Arrozy
-NIM : 1102200037
+<img alt="Night Coding" src="./assets/Hand%20Wave.gif" width='40' align="left"/><h2>Belajar Nodejs dengan CSS Tailwind</h2>
+
+<!-- ## 👋 &nbsp;Belajar Nodejs dengan Tailwind CSS-->
+
+### 👨🏻‍💻 &nbsp;Profil
+```
+Dosen Pembimbing      : Billy Montolalu, S.Kom., M.Kom
+Nama Mahasiswa        : Daffa Fakhuddin Arrozy
+Nomor Induk Mahasiswa : 1102200037
+```
+
+<img alt="Night Coding" src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" align="right"/>
+
+### 🛠 &nbsp;Built With
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,vue,tailwind&perline=3)](https://skillicons.dev)
+
+
 
