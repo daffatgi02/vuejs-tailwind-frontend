@@ -9,14 +9,16 @@ export default {
     }
   },
   methods: {
-    async getData() {
-      try {
-        const response = await fetch("http://localhost:3000/sensor/suhu");
-        const data = await response.json();
-        this.suhu = data;
-      } catch (error) {
-        console.error(error);
-      }
+    methods: {
+      async getData() {
+        try {
+          const response = await axios.get("http://localhost:3000/sensor/suhu");
+          this.listsuhu = response.data;
+        } catch (error) {
+          console.error(error);
+          alert("Terjadi kesalahan saat mengambil data.");
+        }
+      },
     },
     async createData() {
       try {
@@ -28,7 +30,8 @@ export default {
         console.error(error);
         alert("Terjadi kesalahan saat menambahkan data.");
       }
-    }
+    },
+
   },
 };
 </script>
