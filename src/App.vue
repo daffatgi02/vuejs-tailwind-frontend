@@ -2,14 +2,18 @@
 export default{
   data(){
     return{
-      listsuhu: []
+      suhu: []
     }
   },
   methods:{
-    async ambildata() {
-      const response = await fetch("http://localhost:3000/getlist");
-      const data = await response.json();
-      this.listsuhu = data.Sensor_suhu
+    async getData() {
+      try {
+        const response = await fetch("http://localhost:3000/sensor/suhu");
+        const data = await response.json();
+        this.suhu = data;
+      } catch (error) {
+        console.error(error);
+      }
     },
   },
 };
@@ -18,17 +22,16 @@ export default{
 <template>
   <table class="p-10">
     <tr>
-      <td>Waktu</td>
-      <td>Suhu</td>
+      <th>Waktu</th>
+      <th>Suhu</th>
     </tr>
-    <tr v-for="item in listsuhu">
+    <tr v-for="item in suhu">
       <td>{{ item.waktu }}</td>
       <td>{{ item.suhu }}</td>
     </tr>
   </table>
 
   <div>
-    <button class="rounded-3xl p-2 bg-red-500 text-white" @click="ambildata()">Ambil Data</button>
-    <button class="rounded-3xl p-2 bg-blue-500 text-white" @click="ambildata()">Testing Button</button>
+    <button class="rounded-3xl p-2 bg-red-500 text-white" @click="getData()">Ambil Data</button>
   </div>
 </template>
