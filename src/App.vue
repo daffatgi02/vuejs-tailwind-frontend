@@ -20,18 +20,22 @@ export default{
 </script>
 
 <template>
-  <table class="p-10">
-    <tr>
-      <th>Waktu</th>
-      <th>Suhu</th>
-    </tr>
-    <tr v-for="item in suhu">
-      <td>{{ item.waktu }}</td>
-      <td>{{ item.suhu }}</td>
-    </tr>
+  <table class="table-auto text-center mx-auto">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2">Waktu</th>
+        <th class="px-4 py-2">Suhu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="item in suhu" :key="item.waktu" class="text-left">
+        <td class="border px-4 py-2">{{ item.waktu }}</td>
+        <td class="border px-4 py-2">{{ item.suhu }}</td>
+      </tr>
+    </tbody>
   </table>
 
-  <div>
-    <button class="rounded-3xl p-2 bg-red-500 text-white" @click="getData()">Ambil Data</button>
+  <div class="text-center">
+    <button class="bg-red-500 text-white rounded-3xl p-2" @click="getData()">Ambil Data</button>
   </div>
 </template>
